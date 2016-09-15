@@ -15,6 +15,7 @@ rect = None
 frame = 1
 fig = plt.figure()
 is_swaped = False
+
 for i in range(data_len):
     if ch_input == 'q':
         break;
@@ -43,6 +44,17 @@ for i in range(data_len):
                 frame += 1
             if ch_input == 'q':
                 break;
+        ch_input = raw_input('input your choice: q for quit, n for next step:')
+        ch_input = ch_input.strip()
+        if ch_input == 'n':
+            if rect:
+                rect.remove()
+            rect = plt.bar(x, data, 0.9, color = bar_color)
+            plt.axis([0, data_len + 2, 0, 1.2])
+            plt.show(block=False)
+        text.Annotation('hello', (3, 1.0))
+        if ch_input == 'q':
+            break;
 while True:
     ch_input = raw_input('algorithm is done, press q to quit:')
     if ch_input == 'q':
