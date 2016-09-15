@@ -1,2 +1,2 @@
 # visual_algorithm_ds
-have fun with wisual seeing the normal algorithm(ps: a better way to learn)
+have fun with visually seeing the normal algorithms execute(ps: a better way to learn)
