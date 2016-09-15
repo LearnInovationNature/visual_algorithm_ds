@@ -1,10 +1,10 @@
-
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.text as text
 
 #the array length that participate in sorting
 data_len = 10 
+#the data source
 data = np.random.rand(data_len)  
 #gen the x axis marks
 x = np.linspace(0, 100, data_len)
@@ -38,6 +38,7 @@ for i in range(data_len):
                 rect = plt.bar(x, data, 0.9, color = bar_color)
                 plt.axis([0, data_len + 2, 0, 1.2])
                 plt.show(block=False)
+                #save the figure if needed.
             #    fig.savefig(str(frame) + '.png')
                 frame += 1
             if ch_input == 'q':
