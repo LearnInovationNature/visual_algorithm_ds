@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib.text as text
 
 #the array length that participate in sorting
-data_len = 10 
+data_len = 50 
 #the data source
 data = np.random.rand(data_len)  
 #gen the x axis marks
